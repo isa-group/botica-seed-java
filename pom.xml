@@ -12,6 +12,7 @@
   <properties>
     <maven.compiler.source>21</maven.compiler.source>
     <maven.compiler.target>21</maven.compiler.target>
+    <mainClass>com.example.BotLauncher</mainClass>
     <imageTag>botica-bot-example</imageTag>
   </properties>
 
@@ -50,7 +51,7 @@
                 <manifest>
                   <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
                   <addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
-                  <mainClass>com.example.BotLauncher</mainClass>
+                  <mainClass>${mainClass}</mainClass>
                 </manifest>
               </archive>
               <finalName>bot</finalName>
