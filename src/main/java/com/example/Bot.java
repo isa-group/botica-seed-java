@@ -1,7 +1,7 @@
 package com.example;
 
-import es.us.isa.botica.bot.AbstractBotApplication;
+import es.us.isa.botica.bot.BaseBot;
 
-public class Bot extends AbstractBotApplication {
+public class Bot extends BaseBot {
   // Implement your bot's logic here.
 }

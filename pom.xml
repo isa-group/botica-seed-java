@@ -12,7 +12,7 @@
   <properties>
     <maven.compiler.source>21</maven.compiler.source>
     <maven.compiler.target>21</maven.compiler.target>
-    <mainClass>com.example.BotLauncher</mainClass>
+    <mainClass>com.example.BotBootstrap</mainClass>
     <imageTag>botica-bot-example</imageTag>
   </properties>
 
@@ -20,7 +20,7 @@
     <dependency>
       <groupId>io.github.isa-group.botica</groupId>
       <artifactId>botica-lib-java</artifactId>
-      <version>0.0.4</version>
+      <version>0.3.0</version>
     </dependency>
   </dependencies>
 
