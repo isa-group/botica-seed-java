@@ -1,5 +1,5 @@
 # Java JRE version (match with pom.xml Java target version compatibility)
-FROM openjdk:21
+FROM eclipse-temurin:21
 
 WORKDIR /app
 COPY target/bot.jar /app/
