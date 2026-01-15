@@ -1,5 +1,8 @@
 #!/bin/bash
 
+SCRIPT_DIR=$(dirname "$0")
+cd "$SCRIPT_DIR" || exit 1
+
 echo "Building the maven project..."
 if ! ./mvnw clean install; then
   echo "Maven build failed. Exiting."
