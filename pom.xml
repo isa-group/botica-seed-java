@@ -10,10 +10,9 @@
   <version>1.0-SNAPSHOT</version>
 
   <properties>
-    <maven.compiler.source>21</maven.compiler.source> <!-- Java source compatibility (match with Dockerfile Java version) -->
-    <maven.compiler.target>21</maven.compiler.target> <!-- Java target compatibility (match with Dockerfile Java version) -->
+    <maven.compiler.source>25</maven.compiler.source> <!-- Java source compatibility (match with Dockerfile Java version) -->
+    <maven.compiler.target>25</maven.compiler.target> <!-- Java target compatibility (match with Dockerfile Java version) -->
     <mainClass>com.example.BotBootstrap</mainClass>
-    <imageTag>botica-bot-example</imageTag>
   </properties>
 
   <dependencies>
