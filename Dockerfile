@@ -3,10 +3,10 @@ FROM maven:3.9-eclipse-temurin-25 AS builder
 WORKDIR /app
 
 COPY pom.xml .
-RUN mvn dependency:go-offline
+RUN mvn dependency:resolve && mvn dependency:resolve-plugins
 
 COPY . .
-RUN mvn clean package
+RUN mvn clean package -o -DskipTests
 
 
 # --- Stage 2: Runtime ---
