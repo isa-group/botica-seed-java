@@ -14,6 +14,6 @@ RUN mvn clean package
 FROM eclipse-temurin:25-jre
 WORKDIR /app
 
-COPY --from=builder /app/target/*.jar bot.jar
+COPY --from=builder /app/target/bot.jar bot.jar
 
 ENTRYPOINT ["java", "-jar", "bot.jar"]
